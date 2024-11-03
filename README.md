@@ -47,14 +47,14 @@ In the initial phase of the data cleaning and preparations, we preform the follo
 ----
 #### Retail Store Sales 
 This involved analysing the data to answer the following questions;
-a. retrieve the total sales for each product category. 
-b. find the number of sales transactions in each region. 
-c. find the highest-selling product by total sales value. 
-d. calculate total revenue per product. 
-f. calculate monthly sales totals for the current year. 
-g. find the top 5 customers by total purchase amount. 
-h. calculate the percentage of total sales contributed by each region. 
-i. identify products with no sales in the last quarter. 
+- a. retrieve the total sales for each product category. 
+- b. find the number of sales transactions in each region. 
+- c. find the highest-selling product by total sales value. 
+- d. calculate total revenue per product. 
+- f. calculate monthly sales totals for the current year. 
+- g. find the top 5 customers by total purchase amount. 
+- h. calculate the percentage of total sales contributed by each region. 
+- i. identify products with no sales in the last quarter. 
 
 #### Customer Subscriptions
  This involved analysing the data to answer the following questions;
