@@ -1,6 +1,6 @@
 ### Project Title
 ---
-**Customer & Sales Performance Analysis Project**
+** Sales Performance Analysis Project**
 
 
 ### Table Outline for the Portfolio
@@ -16,11 +16,7 @@
 
 ### Project Overview
 ---
-This project focuses on analyzing two main areas:
-1. Retail Store Sales: The aim of the analysis is to check the performance of various products, to determine the bestsellers, and to compare the different region sales in different months from 2023 to 2024..
-The goal is to find patterns and insights to help improve our business decisions on sales and customer retention.
-
-2. Customer Subscriptions: Looking at trends on how customers subscribe, cancel, and renew. Also to identify the most popular subscription type.
+This project involves a comprehensive analysis of a retail store sales data to evaluate product performance, pinpoint top-selling items/product, and comparing monthly sales across various regions from 2023 to 2024. The primary aim is to uncover trends and patterns that reveal insights into customer preferences and regional variations in sales. By identifying the best-performing products and understanding sales dynamics, this analysis will provide valuable data-driven insights to support informed business decisions, optimize product offerings, and enhance customer retention strategies. Ultimately, the findings will serve as a foundation for improving sales performance and driving growth in targeted areas in the upcoming years.
 
 ### Data Sources
 ---
@@ -28,7 +24,7 @@ The primary source of data used here is Lita Capstone Dataset.CSV. This will be 
 
 ### Tools Used
 ---
-- Microsoft Excel [Download Here](http://mxj6.2.vu/2)
+- Microsoft Excel [Lita Capstone Dataset Download](https://shorturl.at/iVtt2)
   1. For data cleaning
   2. For Analysis
      
@@ -47,25 +43,14 @@ In the initial phase of the data cleaning and preparations, we preform the follo
 ----
 #### Retail Store Sales 
 This involved analysing the data to answer the following questions;
-- a. retrieve the total sales for each product category. 
-- b. find the number of sales transactions in each region. 
-- c. find the highest-selling product by total sales value. 
-- d. calculate total revenue per product. 
-- f. calculate monthly sales totals for the current year. 
-- g. find the top 5 customers by total purchase amount. 
-- h. calculate the percentage of total sales contributed by each region. 
-- i. identify products with no sales in the last quarter. 
-
-#### Customer Subscriptions
- This involved analysing the data to answer the following questions;
-a. retrieve the total number of customers from each region. 
-b. find the most popular subscription type by the number of customers. 
-c. find customers who canceled their subscription within 6 months. 
-d. calculate the average subscription duration for all customers. 
-e. find customers with subscriptions longer than 12 months. 
-f. calculate total revenue by subscription type. 
-g. find the top 3 regions by subscription cancellations. 
-h. find the total number of active and canceled subscriptions. 
+- Retrieve the total sales for each product category. 
+- Find the number of sales transactions in each region. 
+- Find the highest-selling product by total sales value. 
+- Ccalculate total revenue per product. 
+- Calculate monthly sales totals for the current year. 
+- Find the top 5 customers by total purchase amount. 
+- Calculate the percentage of total sales contributed by each region. 
+- Identify products with no sales in the last quarter. 
 
 ### Data Analysis
 ---
