@@ -1,6 +1,6 @@
-### Project Title
+# Project Title
 ---
-** Sales Performance Analysis Project**
+## Sales Performance Analysis Project
 
 
 ### Table Outline for the Portfolio
@@ -8,11 +8,12 @@
 - [Project Overview](#project-overview)
 - [Data Sources](#data-sources)
 - [Tools Used](#tools-used)
+- [Data Dictionary](#data-dictionary)
 - [Data Cleaning and Preparations](#data-cleaningand-preparation)
 - [Data Analysis](#data-analysis)
 - [Data Visualization](#data-visualization)
 - [Conclusion](#conclusion)
-- [Recommedndation](#recommendation)
+- [Recommendation](#recommendation)
 
 ### Project Overview
 ---
@@ -32,6 +33,25 @@ The primary source of data used here is Lita Capstone Dataset.CSV. This will be 
 - Power B.I - For visualization of the dataset
 - GitHub for Portfolio Building
 
+### Data Dictionary
+Outline the terminology and definitions of key column headers specific to the dataset. This section ensures clarity for anyone reviewing the project.
+
+i.  OrderID: A unique number that identifies each order made by a customer.
+
+ii.  Customer ID: A unique number assigned to each customer to keep track of their orders.
+
+iii  Product: The name or type of item that is being sold.
+
+iv  Region: The area or location where the customer is from or where the sale occurs.
+
+v  Order Date: The date when the order was placed.
+
+vi  Quantity: The number of items ordered.
+
+vii  Unit Price: The cost of a single item.
+
+viii  Total Sales: The total money made from an order, calculated by multiplying the quantity by the unit price.
+
 ### Data Cleaning and Preparations
 ----
 In the initial phase of the data cleaning and preparations, we preform the following actions;
@@ -42,28 +62,48 @@ In the initial phase of the data cleaning and preparations, we preform the follo
 ### Exploratory data Analysis
 ----
 #### Retail Store Sales 
-This involved analysing the data to answer the following questions;
-- Retrieve the total sales for each product category. 
-- Find the number of sales transactions in each region. 
-- Find the highest-selling product by total sales value. 
-- Ccalculate total revenue per product. 
-- Calculate monthly sales totals for the current year. 
-- Find the top 5 customers by total purchase amount. 
-- Calculate the percentage of total sales contributed by each region. 
-- Identify products with no sales in the last quarter. 
+
+This analysis focused on answering key business questions, inorder to support strategic decisions in sales performance and customer including:
+
+- Calculating total sales for each product category.
+- Determining the number of sales transactions in each region.
+- Identifying the highest-selling product based on total sales value.
+- Calculating total revenue for each product.
+- Summing monthly sales totals for the current year.
+- Identifying the top 5 customers by total purchase amount.
+- Calculating the percentage contribution of each region to total sales.
+- Finding products with no sales in the last quarter.
 
 ### Data Analysis
 ---
 ```SQL
-Select top 5  Customer_Id, Sum(Total_Sales) AS TotalPurchase
-From [dbo].[SalesData Table]
-Group By Customer_Id
-Order By TotalPurchase Desc;
+Retrieve the total sales for each product category.
+
+SELECT Product, SUM(Total_Sales) AS Total_Sales from [dbo].[SalesData]
+GROUP BY Product;
+<img width="169" alt="image" src="https://github.com/user-attachments/assets/cb24487d-21de-4084-abf6-30fe237156e9">
 
 ```
-Select Product, SUM(Total_Sales) AS TotalRevenue
-From [dbo].[SalesData Table]
-Group by Product;
+Find the number of sales transactions in each region.
+```
+Find the highest-selling product by total sales value.
+
+```
+Calculate total revenue per product. 
+
+```
+Calculate monthly sales totals for the current year.
+
+```
+Find the top 5 customers by total purchase amount. 
+
+```
+Calculate the percentage of total sales contributed by each region.
+
+```
+Identify products with no sales in the last quarter. 
+
+```
 
 ### Data Visualization
 ---
