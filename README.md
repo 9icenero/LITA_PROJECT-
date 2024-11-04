@@ -77,36 +77,90 @@ This analysis focused on answering key business questions, inorder to support st
 ### Data Analysis
 ---
 ```SQL
-Retrieve the total sales for each product category.
+1. Retrieve the total sales for each product category.
 
 SELECT Product, SUM(Total_Sales) AS Total_Sales from [dbo].[SalesData]
 GROUP BY Product;
-<img width="169" alt="image" src="https://github.com/user-attachments/assets/cb24487d-21de-4084-abf6-30fe237156e9">
+```
+<img width="169" alt="image" src="https://github.com/user-attachments/assets/2e7d1d7f-6276-455f-a1c7-de33e39435ad">
 
-```
-Find the number of sales transactions in each region.
-```
-Find the highest-selling product by total sales value.
+```SQL
+2. Find the number of sales transactions in each region.
 
+SELECT Region, Count(Total_Sales) AS NumberofSales_Transaction from [dbo].[SalesData]
+GROUP BY Region;
 ```
-Calculate total revenue per product. 
+<img width="208" alt="image" src="https://github.com/user-attachments/assets/2371e0d4-8c57-466c-b724-40f54f879f5e">
 
-```
-Calculate monthly sales totals for the current year.
+```SQL
+3. Find the highest-selling product by total sales value.
 
+select top 1 product, sum(quantity*unitprice) as totalsales
+From [dbo].[SalesData]
+Group by product
+Order by totalsales desc;
 ```
-Find the top 5 customers by total purchase amount. 
+<img width="109" alt="image" src="https://github.com/user-attachments/assets/2215a688-6bd7-4c9f-af0e-c299a607bd66">
 
-```
-Calculate the percentage of total sales contributed by each region.
+```SQL
+4.  Calculate total revenue per product.
+   
+Select Product, SUM(Total_Sales) AS TotalRevenue
+From [dbo].[SalesData]
+Group by Product;
+```SQL
+5.  Calculate monthly sales totals for the current year.
 
+Select Product, SUM(Total_Sales) AS TotalRevenue
+From [dbo].[SalesData]
+Group by Product;
 ```
-Identify products with no sales in the last quarter. 
+<img width="143" alt="image" src="https://github.com/user-attachments/assets/6b491bb8-bd23-4879-8426-b5894de7297b">
 
+```SQL
+6.  Find the top 5 customers by total purchase amount.
+
+Select top 5  Customer_Id, Sum(Total_Sales) AS TotalPurchase
+From [dbo].[SalesData]
+Group By Customer_Id
+Order By TotalPurchase Desc;
 ```
+<img width="146" alt="image" src="https://github.com/user-attachments/assets/f1b382e5-85ad-44c2-8388-7e206ea64512">
+
+```SQL
+7.  Calculate the percentage of total sales contributed by each region.
+
+SELECT  region, 
+    SUM(quantity * unitprice) AS TotalSales,
+    SUM(quantity * unitprice) * 1.0 / (SELECT SUM(quantity * unitprice) FROM [dbo].[SalesData]) * 100 AS PercentageOfTotalSales
+FROM 
+    [dbo].[SalesData]
+GROUP BY 
+    region;
+```
+
+<img width="208" alt="image" src="https://github.com/user-attachments/assets/63a42990-1174-4934-9bd9-1addc2d964be">
+
+```SQL
+8.  Identify products with no sales in the last quarter. 
+
+Select distinct product
+From [dbo].[SalesData]
+Where product Not In(
+Select product
+From [dbo].[SalesData]
+Where OrderDate >= DateAdd(quarter, -1, GetDate()) and OrderDate < GetDate());
+```
+
+<img width="120" alt="image" src="https://github.com/user-attachments/assets/6e683d9b-4879-4922-a905-e296b31f3c5e">
+
 
 ### Data Visualization
 ---
+<img width="488" alt="Screenshot 2024-11-04 224905" src="https://github.com/user-attachments/assets/c5a5e398-63c4-46f4-a88e-c4328c93cce5">
+
+<img width="485" alt="Sales Analysis" src="https://github.com/user-attachments/assets/d4ff5854-d7a8-47b2-81e4-1122c1f65916">
+
 
 
 ### Conclusion
