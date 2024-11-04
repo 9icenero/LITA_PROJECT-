@@ -1,6 +1,7 @@
 # Project Title
 ---
-## Sales Performance Analysis Project
+### Sales Performance Analysis Project
+---
 
 
 ### Table Outline for the Portfolio
@@ -159,12 +160,21 @@ Where OrderDate >= DateAdd(quarter, -1, GetDate()) and OrderDate < GetDate());
 ---
 <img width="488" alt="Screenshot 2024-11-04 224905" src="https://github.com/user-attachments/assets/c5a5e398-63c4-46f4-a88e-c4328c93cce5">
 
+
 <img width="485" alt="Sales Analysis" src="https://github.com/user-attachments/assets/d4ff5854-d7a8-47b2-81e4-1122c1f65916">
 
 
 
 ### Conclusion
 ---
+My analysis revealed that Shoes are the top-selling product by revenue, while Socks generate the least revenue. In terms of regional performance, the South region has the highest sales, whereas the West lags behind.
 
+When looking at total quantities sold per product, Hats rank the highest, while Jackets have the lowest sales volume. Regional data shows that Hats, Jackets, and Shirts are not selling in the South region. Regarding monthly sales for the current year, February leads in sales, followed by January, with July being the lowest.
 
 ### Recommendation
+1. Increase Sales of Low-Selling Items: Promotions or bundles to boost sales of low-selling items like Socks and Jackets by pairing them with popular items like Shoes.
+
+2.  Focus on Low-Performing Regions: Special campaigns promotion should be carried out to boost sales in the West region and investigate why certain items aren’t selling in the South such as getting feedbacks from customers their options of the products, inorder to make any necessary adjustments.
+
+3.  Boost Sales in Low Months: Since February had strong sales, study the sales trends and use similar strategies or promotions in slower months like July to improve sales during those times.
+   I believe onces these suggestions are implemented, we will see a increase in revenue inflow in the upcoming months.
